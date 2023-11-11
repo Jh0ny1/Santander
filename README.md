@@ -1,44 +1,97 @@
-
 # Santander-Coders
 Seguindo as Aulas da Iniciativa Santander Coders e replicando o que eu vejo nas aulas
 
 ## Ordem de Trabalho 
 
-    1° Modificação ou alteração
-    2° git add, modificação pronta para ser commitada
-    3° git commit -m, para salvar o progresso
-        + E começar tudo de novo, hahaha
+1. **Modificação ou Alteração**
+2. `git add <nome_do_arquivo>`: Prepara a modificação para ser commitada.
+3. `git commit -m "mensagem"`: Salva o progresso com uma mensagem descritiva.
+   - Reinicie o processo sempre que necessário, hahaha
 
 ## Comandos
-    git init, faz a pasta virar um repositório
 
-    git add, adiciona um arquivo ao repositório (já joga ele na área de staged)
-        git add (nome do arquivo a ser adicionado)
-    
-    git diff, mostra as linhas adicionadas ou removidas enquanto não commitadas (após commitar as modificações usar git diff --stag)
+- `git init`: Transforma a pasta em um repositório Git.
 
-    git commit -m "algum texto dizendo oq vc mudou", faz um save state das suas mudanças (Os commits não se sobre-escrevem)
+- `git add <nome_do_arquivo>`: Adiciona um arquivo ao repositório (coloca-o na área de staged).
+  
+- `git diff`: Mostra as linhas adicionadas ou removidas ainda não commitadas (após commitar, use `git diff --staged`).
 
-    git config, mostra comandos
-        git config --global, alterações em todo o compilador 
-        git config --global user.name "name", seta um nome para se identificar, (identificação em trabalhos em grupo)
-        git config --global user.email "email", seta um email para se identificar, (identificação em trabalhos em grupo)
-        git config --global init.defaultBranch "tipo da branch", muda a branch de acordo com o nome nela
-    
-    git log, mostra o histórico de commits
+- `git commit -m "mensagem"`: Salva um estado das mudanças (os commits não se sobrescrevem).
 
-    git restore, volta o código pro ultimo commit salva
-        git resetore --staged "nome do arquivo", volta o código da area de staged para a area de modified
+- `git config`: Mostra comandos de configuração.
+  - `git config --global`: Altera configurações globalmente.
+  - `git config --global user.name "nome"`: Define um nome de usuário (útil para trabalhos em grupo).
+  - `git config --global user.email "email"`: Define um email para identificação.
+  - `git config --global init.defaultBranch "nome_da_branch"`: Muda a branch padrão.
 
-    git remote, "sei lá"
-    
+- `git log`: Exibe o histórico de commits.
 
+- `git restore`: Volta o código para o último commit salvo.
+  - `git restore --staged <nome_do_arquivo>`: Volta o arquivo da área de staged para a área de modified.
 
+- `git remote`: Conecta seu repositório local a um repositório remoto.
+  - `git remote add origin <url>`: Adiciona um repositório remoto chamado "origin".
+
+- `git push`: Envia seus commits para um repositório remoto.
+  - `git push -u origin <nome_da_branch>`: Define a branch remota como upstream.
+
+- `git pull`: Obtém alterações de um repositório remoto.
+  - `git pull origin <nome_da_branch>`: Obtém as alterações da branch remota.
+
+- `git fetch`: Obtém todas as branches e tags de um repositório remoto, sem mesclá-las com a sua versão local.
+
+- `git merge`: Combina alterações de uma branch para outra.
+  - `git merge <nome_da_branch>`: Realiza o merge da branch especificada na branch atual.
+
+- `git checkout`: Altera a branch atual ou restaura arquivos.
+  - `git checkout -b <nome_da_branch>`: Cria e muda para uma nova branch.
+  - `git checkout <nome_da_branch>`: Muda para uma branch existente.
+
+- `git branch`: Lista, cria ou deleta branches.
+  - `git branch -d <nome_da_branch>`: Deleta uma branch local.
+
+- `git tag`: Lista, cria ou deleta tags.
+  - `git tag -a <nome_da_tag> -m "mensagem"`: Cria uma tag anotada.
+
+- `git log`: Exibe o histórico de commits.
+  - `git log --oneline`: Exibe o histórico de commits em uma única linha.
+
+- `git blame`: Mostra quem modificou cada linha de um arquivo e em qual commit.
+
+- `git revert`: Desfaz um commit específico, criando um novo commit de reversão.
+
+- `git cherry-pick`: Aplica um commit específico de uma branch para outra.
+
+- `git submodule`: Adiciona submódulos a um repositório.
+
+- `git stash`: Salva temporariamente as mudanças que ainda não foram commitadas.
+
+- `git grep`: Procura por um padrão em seus arquivos do repositório.
+
+## Atalhos
+
+- `Ctrl + L`: Limpa o terminal.
+  
+- `Ctrl + S`: Salva as alterações.
+
+- `Ctrl + C`: Cancela a operação atual no terminal.
+
+- `Tab`: Completa automaticamente nomes de arquivos e comandos.
+
+- `Ctrl + X`: Corta o texto selecionado.
+
+- `Ctrl + V`: Cola o texto copiado.
+
+- `Ctrl + Z`: Desfaz a última ação.
+
+- `Ctrl + Y`: Refaz a última ação desfeita.
 
 
 ## Dicionário
 
-   
+
+- **Fork**: Criar uma cópia independente de um repositório, permitindo o desenvolvimento separado.
+
 - **Repositório**: Uma pasta que pode ser adicionada ao GitHub.
 
 - **Commit**: Um "save state" das suas alterações, deve ser nomeado.
