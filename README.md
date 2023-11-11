@@ -209,18 +209,6 @@ Seguindo as Aulas da Iniciativa Santander Coders e replicando o que eu vejo nas 
 - **Hacktoberfest**: Evento anual para incentivar contribuições ao código aberto no GitHub durante outubro.
 
 
-## Atalhos
-
-    
-- `Ctrl + L`: Limpa o terminal.
-  
-- `Ctrl + S`: Salva as alterações.
-
-- `Ctrl + C`: Cancela a operação atual no terminal.
-
-- `Tab`: Completa automaticamente nomes de arquivos e comandos.
-
-
 ## Etapas
 
 - **Untracked**: Arquivos recentemente adicionados e não commitados, exibidos em vermelho.
